@@ -26,10 +26,10 @@ extern "C" {
 #define BUTTON_PIN (9) // BOOT button
 
 // LoRa
-#define USE_LLCC68
+//#define USE_LLCC68
 #define USE_SX1262
 // #define USE_RF95
-#define USE_SX1268
+// #define USE_SX1268
 
 #define LORA_DIO0 RADIOLIB_NC
 #define LORA_RESET (5)
