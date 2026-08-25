@@ -14,6 +14,12 @@
  * For more information, see: https://meshtastic.org/
  */
 #include "power.h"
+#ifdef CONFIG_IDF_TARGET_ESP32C3
+#ifndef ADC_CHANNEL
+#define ADC_CHANNEL ADC1_CHANNEL_1
+#endif
+#endif
+
 #include "MessageStore.h"
 #include "NodeDB.h"
 #include "PowerFSM.h"
