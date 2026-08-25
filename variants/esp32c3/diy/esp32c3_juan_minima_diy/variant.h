@@ -84,14 +84,15 @@
 #define SX126X_RXEN  2
 #define SX126X_TXEN  3
 
+
 // --------------------------------------------------------------------------
 // Battery Voltage Divider
 // --------------------------------------------------------------------------
-#define BATTERY_PIN 1
-#define ADC_UNIT ADC_UNIT_1
-#define ADC_CHANNEL ADC_CHANNEL_1
-#define ADC_MULTIPLIER 2.0
-
+#define BATTERY_PIN        1
+#define ADC_UNIT           ADC_UNIT_1
+#define ADC_CHANNEL        ADC_CHANNEL_1
+#define ADC_CHANNEL_1      1   // Деякі версії ядра вимагають дублювання каналу
+#define ADC_MULTIPLIER     1.83
 
 
 
