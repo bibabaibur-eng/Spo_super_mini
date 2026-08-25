@@ -14,10 +14,6 @@
  * For more information, see: https://meshtastic.org/
  */
 #include "power.h"
-#ifndef ADC_CHANNEL
-#define ADC_CHANNEL ADC1_CHANNEL_1
-#endif
-
 #include "MessageStore.h"
 #include "NodeDB.h"
 #include "PowerFSM.h"
