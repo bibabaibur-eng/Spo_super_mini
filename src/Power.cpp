@@ -60,7 +60,7 @@
 #if defined(BATTERY_PIN) && defined(ARCH_ESP32)
 
 #ifndef BAT_MEASURE_ADC_UNIT // ADC1 is default
-static const adc1_channel_t adc_channel = ADC_CHANNEL;
+static const adc1_channel_t adc_channel = ADC1_CHANNEL_1;
 static const adc_unit_t unit = ADC_UNIT_1;
 #else // ADC2
 static const adc2_channel_t adc_channel = ADC_CHANNEL;
