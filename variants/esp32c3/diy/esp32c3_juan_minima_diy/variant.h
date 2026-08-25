@@ -88,10 +88,10 @@
 // --------------------------------------------------------------------------
 // Battery Voltage Divider
 // --------------------------------------------------------------------------
-#define BATTERY_PIN            1
-#define ADC_CHANNEL            ADC1_CHANNEL_1
-#define ADC_ATTENUATION        ADC_ATTEN_DB_12
-#define ADC_MULTIPLIER         1.83
+#define BATTERY_PIN 1
+#define ADC_CHANNEL ADC_CHANNEL_1
+#define ADC_ATTENUATION ADC_ATTEN_DB_11
+#define ADC_MULTIPLIER 1.83
 
 
 
