@@ -52,7 +52,7 @@
 #define SX126X_DIO0  LORA_DIO0
 
 // TCXO (DX-LR30)
-//#define SX126X_DIO3_TCXO_VOLTAGE 1.8
+#define SX126X_DIO3_TCXO_VOLTAGE 1.8
 
 // --------------------------------------------------------------------------
 // Disable unused radios
