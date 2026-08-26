@@ -118,12 +118,12 @@ jobs:
   #build_location: local
   #secrets: inherit
 
-  package-pio-deps-native-tft:
-    if: ${{ github.repository == 'meshtastic/firmware' && github.event_name == 'workflow_dispatch' }}
-    uses: ./.github/workflows/package_pio_deps.yml
-    with:
-      pio_env: native-tft
-    secrets: inherit
+  #package-pio-deps-native-tft:
+  #if: ${{ github.repository == 'meshtastic/firmware' && github.event_name == 'workflow_dispatch' }}
+  #uses: ./.github/workflows/package_pio_deps.yml
+  #with:
+    #pio_env: native-tft
+  #secrets: inherit
 
   test-native:
     if: ${{ !contains(github.ref_name, 'event/') && github.repository == 'meshtastic/firmware' }}
