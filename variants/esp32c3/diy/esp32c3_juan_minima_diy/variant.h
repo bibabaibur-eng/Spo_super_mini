@@ -93,5 +93,11 @@
 #define ADC_ATTENUATION ADC_ATTEN_DB_11
 #define ADC_MULTIPLIER 1.83
 
+// Disable I2C
+#undef I2C_SDA
+#undef I2C_SCL
+#undef HAS_WIRE
+
+
 
 
