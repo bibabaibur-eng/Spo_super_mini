@@ -97,6 +97,7 @@
 #undef I2C_SDA
 #undef I2C_SCL
 #undef HAS_WIRE
+#define I2C_NO_RESCAN
 
 
 
