@@ -22,3 +22,11 @@ jobs:
           pio_platform: esp32c3
           pio_env: esp32c3_juan_minima_diy
           pio_target: build
+
+      - name: Upload firmware
+        uses: actions/upload-artifact@v4
+        with:
+          name: SPO-C3-SUPER-MINI-firmware
+          path: |
+            .pio/build/esp32c3_juan_minima_diy/*.bin
+          if-no-files-found: error
