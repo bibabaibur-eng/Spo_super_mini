@@ -187,6 +187,11 @@ void ScanI2CTwoWire::scanPort(I2CPort port, uint8_t *address, uint8_t asize)
 
     LOG_DEBUG("Scan for I2C devices on port %d", port);
 
+    #ifdef PRIVATE_HW
+    if (port == ScanI2C::I2CPort::WIRE1)
+        return;
+    #endif
+
     uint8_t err;
 
     DeviceAddress addr(port, 0x00);
