@@ -290,7 +290,7 @@ jobs:
       - setup
       - version
       - gather-artifacts
-      - build-debian-src
+      #- build-debian-src
       - package-pio-deps-native-tft
     steps:
       - name: Checkout
