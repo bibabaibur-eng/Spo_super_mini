@@ -1,0 +1,24 @@
+name: SPO C3 SUPER MINI Build
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Build ESP32-C3 Juan
+        uses: meshtastic/gh-action-firmware@main
+        with:
+          pio_platform: esp32c3
+          pio_env: esp32c3_juan_minima_diy
+          pio_target: build
