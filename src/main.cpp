@@ -528,7 +528,10 @@ void setup()
 #endif
 
 #if defined(I2C_SDA1) || (defined(NRF52840_XXAA) && (WIRE_INTERFACES_COUNT == 2))
+#ifndef PRIVATE_HW
+    
     i2cScanner->scanPort(ScanI2C::I2CPort::WIRE1);
+#endif
 #endif
 
 #if defined(I2C_SDA)
