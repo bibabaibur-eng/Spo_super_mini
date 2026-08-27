@@ -736,7 +736,7 @@ void setup()
 #endif
 #endif
 
-#if !MESHTASTIC_EXCLUDE_I2C
+#if !MESHTASTIC_EXCLUDE_I2C && !defined(I2C_NO_RESCAN)
 #if !defined(ARCH_STM32WL)
     if (acc_info.type != ScanI2C::DeviceType::NONE) {
         accelerometerThread = new AccelerometerThread(acc_info.type);
@@ -898,8 +898,7 @@ void setup()
     // Now that the mesh service is created, create any modules
     setupModules();
 
-#if !MESHTASTIC_EXCLUDE_I2C
-    // Inform modules about I2C devices
+#if !MESHTASTIC_EXCLUDE_I2C && !defined(I2C_NO_RESCAN)
     ScanI2CCompleted(i2cScanner.get());
     i2cScanner.reset();
 #endif
