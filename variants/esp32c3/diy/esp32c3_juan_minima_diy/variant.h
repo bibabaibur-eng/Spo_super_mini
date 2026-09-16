@@ -63,7 +63,10 @@
 // --------------------------------------------------------------------------
 // Disable unused peripherals
 // --------------------------------------------------------------------------
+#define HAS_SCREEN 1
 #define USE_SSD1306
+#define I2C_SDA 8
+#define I2C_SCL 9
 #undef USE_SH1106
 #undef USE_SH1107
 #undef USE_SSD1309
