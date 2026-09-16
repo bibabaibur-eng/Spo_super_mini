@@ -22,8 +22,8 @@
 // --------------------------------------------------------------------------
 // I2C / OLED
 // --------------------------------------------------------------------------
-#define HAS_WIRE
-#define HAS_SCREEN
+#define HAS_WIRE 1
+#define HAS_SCREEN 1
 
 #define I2C_SDA 8
 #define I2C_SCL 9
