@@ -93,10 +93,9 @@
 #define ADC_ATTENUATION ADC_ATTEN_DB_11
 #define ADC_MULTIPLIER 1.83
 
-// Disable I2C
-#undef I2C_SDA
-#undef I2C_SCL
-#undef HAS_WIRE
+// I2C / OLED
+#define I2C_SDA 8
+#define I2C_SCL 9
 #define I2C_NO_RESCAN
 
 
