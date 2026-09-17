@@ -1,4 +1,4 @@
-name: SPO C3 SUPER MINI Build
+name: SUPER SPO MESH Build
 
 on:
   workflow_dispatch:
@@ -16,17 +16,17 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Build ESP32-C3 Juan
+      - name: Build ESP32-C3 Super SPO Mesh
         uses: meshtastic/gh-action-firmware@main
         with:
           pio_platform: esp32c3
-          pio_env: esp32c3_juan_minima_diy
+          pio_env: super_spo_mesh
           pio_target: build
 
       - name: Upload firmware
         uses: actions/upload-artifact@v4
         with:
-          name: SPO-C3-SUPER-MINI-firmware
+          name: SUPER-SPO-MESH-firmware
           path: |
-            .pio/build/esp32c3_juan_minima_diy/*.bin
+            .pio/build/super_spo_mesh/*.bin
           if-no-files-found: error
