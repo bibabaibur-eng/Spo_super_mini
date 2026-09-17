@@ -6,7 +6,7 @@
  *  Variant: esp32c3_juan_minima_diy
  * --------------------------------------------------------------------------*/
 
-#define MESHTASTIC_VARIANT_NAME "ESP32-C3 Juan SX1262 DIY"
+#define MESHTASTIC_VARIANT_NAME "Super SPO Mesh"
 
 // --------------------------------------------------------------------------
 // Status LED
